@@ -1,0 +1,27 @@
+[Eagle]
+Version="08 03 02"
+Platform="Mac OS X"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="raspberry.lbr"
+
+[Win_1]
+Type="CAM Processor"
+Loc="0 23 792 535"
+State=0
+Number=3
+Job="/Applications/EAGLE-7.6.0/cam/Elecrow_Gerber_Generater_DrillAlign.cam"
+
+[Win_2]
+Type="Control Panel"
+Loc="0 23 599 422"
+State=1
+Number=0
+
+[Desktop]
+Screen="1440 900"
+Window="Win_1"
+Window="Win_2"
