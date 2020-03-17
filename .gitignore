@@ -31,3 +31,8 @@ ATTINY85/BATSENSE2/attiny_batsense2.b#8
 *.s#7
 *.s#8
 *.s#9
+*.tap
+*.DS_Store
+*.tap
+*.bot.drill.tap
+*.tap
