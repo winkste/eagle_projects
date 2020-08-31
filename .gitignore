@@ -31,23 +31,8 @@ ATTINY85/BATSENSE2/attiny_batsense2.b#8
 *.s#7
 *.s#8
 *.s#9
-.DS_Store
-*.nc
 *.tap
-*.nc
-ATTINY85/BATSENSE2/machine_code/batsense_outer.Teil1 [Profil1].nc
-ATTINY85/BATSENSE2/machine_code/attiny_batsense2_800.bot.drill.tap
-ATTINY85/BATSENSE2/machine_code/attiny_batsense2_3000.bot.drill.tap
-ATTINY85/BATSENSE2/machine_code/attiny_batsense2_1000.bot.drill.tap
-ATTINY85/BATSENSE2/machine_code/attiny_batsense2.top.mill.tap
-ATTINY85/BATSENSE2/machine_code/attiny_batsense2.bot.mill.tap
-ATTINY85/BATSENSE2/machine_code/attiny_batsense2.bot.etch.tap
-ATTINY85/BATSENSE2/machine_code/attiny_batsense2.bot.drill.tap
-ATTINY85/BATSENSE2/machine_code/batsense_outer.Teil1 [Profil1].nc
-ATTINY85/BATSENSE2/machine_code/attiny_batsense2_800.bot.drill.tap
-ATTINY85/BATSENSE2/machine_code/attiny_batsense2_3000.bot.drill.tap
-ATTINY85/BATSENSE2/machine_code/attiny_batsense2_1000.bot.drill.tap
-ATTINY85/BATSENSE2/machine_code/attiny_batsense2.top.mill.tap
-ATTINY85/BATSENSE2/machine_code/attiny_batsense2.bot.mill.tap
-ATTINY85/BATSENSE2/machine_code/attiny_batsense2.bot.etch.tap
-ATTINY85/BATSENSE2/machine_code/attiny_batsense2.bot.drill.tap
+*.DS_Store
+*.tap
+*.bot.drill.tap
+*.tap
