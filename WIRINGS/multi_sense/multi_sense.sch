@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -8375,15 +8375,23 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <sheet>
 <plain>
 <text x="-22.86" y="255.27" size="1.778" layer="91">WEMOS Pinning:
-Tx -                    RST - 
-Rx -                    A0 - TEMT Sig
-D1 - Neo Sig       D0 - 
-D2 -                    D5 - PIR Sig
-D3 - DHT Sig       D6 - 
-D4 -                    D7 - DHT PWR
-G -   GND            D8 - TEMT PWR
-5V - NEO PWR     3.3V - PIR PWR
-GND - NEO GND, PIR GND, TEMPT GND, DHT GND</text>
+Tx -                    
+Rx -                   
+D1 - Neo Sig       
+D2 -                    
+D3 - DHT Sig       
+D4 -                    
+G -   NEO GND, PIR GND, TEMPT GND, DHT GND          
+5V - NEO PWR </text>
+<text x="38.1" y="255.27" size="1.778" layer="91">
+RST - 
+A0 - TEMT Sig
+D0 - 
+D5 - PIR Sig
+D6 - (relay one)
+D7 - DHT PWR
+D8 - TEMT PWR
+3.3V - PIR PWR</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-114.3" y="111.76" smashed="yes">
