@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -8373,6 +8373,15 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <sheets>
 <sheet>
 <plain>
+<text x="25.4" y="252.73" size="1.778" layer="91">WEMOS Pinning:
+Tx - 		RST - 
+Rx - 		A0 - TEMT Sig
+D1 - 		D0 - 
+D2 - 		D5 - PIR Sig
+D3 - DHT Sig                           D6 - 
+D4 - 		D7 - DHT PWR
+G - 		D8 - TEMT PWR
+5V - 		3.3V - PIR PWR</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-114.3" y="111.76"/>
@@ -8662,21 +8671,14 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </net>
 <net name="N$1" class="0">
 <segment>
-<wire x1="-20.32" y1="222.25" x2="-24.13" y2="222.25" width="0.1524" layer="91"/>
-<wire x1="-24.13" y1="222.25" x2="-24.13" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="-24.13" y1="213.36" x2="-43.18" y2="213.36" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
+<wire x1="-24.13" y1="213.36" x2="-24.13" y2="201.93" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="201.93" x2="-21.59" y2="201.93" width="0.1524" layer="91"/>
-<wire x1="-21.59" y1="201.93" x2="-31.75" y2="201.93" width="0.1524" layer="91"/>
-<wire x1="-31.75" y1="201.93" x2="-31.75" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="-31.75" y1="203.2" x2="-43.18" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="-26.67" y1="181.61" x2="-26.67" y2="176.53" width="0.1524" layer="91"/>
 <wire x1="-26.67" y1="176.53" x2="-21.59" y2="176.53" width="0.1524" layer="91"/>
 <wire x1="-21.59" y1="176.53" x2="-21.59" y2="201.93" width="0.1524" layer="91"/>
+<wire x1="-24.13" y1="201.93" x2="-21.59" y2="201.93" width="0.1524" layer="91"/>
 <junction x="-21.59" y="201.93"/>
 </segment>
 </net>
@@ -8724,12 +8726,23 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="-38.1" y1="237.49" x2="-43.18" y2="237.49" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$9" class="0">
+<segment>
+<wire x1="-31.75" y1="203.2" x2="-43.18" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="-31.75" y1="203.2" x2="-31.75" y2="222.25" width="0.1524" layer="91"/>
+<wire x1="-31.75" y1="222.25" x2="-20.32" y2="222.25" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
