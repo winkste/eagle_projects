@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -8369,32 +8369,56 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="TEMT6000" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X15" device="" package3d_urn="urn:adsk.eagle:package:22424/1" value="ESP8266_LEFT"/>
 <part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X15" device="" package3d_urn="urn:adsk.eagle:package:22424/1" value="ESP8266_LEFT"/>
+<part name="NEO" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="25.4" y="252.73" size="1.778" layer="91">WEMOS Pinning:
-Tx - 		RST - 
-Rx - 		A0 - TEMT Sig
-D1 - 		D0 - 
-D2 - 		D5 - PIR Sig
-D3 - DHT Sig                           D6 - 
-D4 - 		D7 - DHT PWR
-G - 		D8 - TEMT PWR
-5V - 		3.3V - PIR PWR</text>
+Tx -                   RST - 
+Rx -                   A0 - TEMT Sig
+D1 -                   D0 - 
+D2 - NEO Sig      D5 - PIR Sig
+D3 - DHT Sig      D6 - 
+D4 -                   D7 - DHT PWR
+G -                     D8 - TEMT PWR
+5V - NEO pwr     3.3V - PIR PWR</text>
 </plain>
 <instances>
-<instance part="FRAME1" gate="G$1" x="-114.3" y="111.76"/>
-<instance part="U$2" gate="G$1" x="-99.06" y="125.73"/>
+<instance part="FRAME1" gate="G$1" x="-114.3" y="111.76" smashed="yes">
+<attribute name="DRAWING_NAME" x="102.87" y="127" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="102.87" y="121.92" size="2.286" layer="94"/>
+<attribute name="SHEET" x="116.205" y="116.84" size="2.54" layer="94"/>
+</instance>
+<instance part="U$2" gate="G$1" x="-99.06" y="125.73" smashed="yes"/>
 <instance part="R1" gate="G$1" x="-26.67" y="186.69" smashed="yes" rot="R270">
 <attribute name="NAME" x="-25.1714" y="189.23" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="-25.146" y="183.388" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="PIR" gate="A" x="1.27" y="222.25"/>
-<instance part="DHT" gate="A" x="1.27" y="199.39"/>
-<instance part="TEMT6000" gate="A" x="1.27" y="240.03"/>
-<instance part="JP1" gate="A" x="-63.5" y="252.73" rot="MR0"/>
-<instance part="JP2" gate="A" x="-63.5" y="203.2" rot="MR0"/>
+<instance part="PIR" gate="A" x="1.27" y="222.25" smashed="yes">
+<attribute name="NAME" x="-5.08" y="227.965" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-5.08" y="214.63" size="1.778" layer="96"/>
+</instance>
+<instance part="DHT" gate="A" x="1.27" y="199.39" smashed="yes">
+<attribute name="NAME" x="-5.08" y="207.645" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-5.08" y="191.77" size="1.778" layer="96"/>
+</instance>
+<instance part="TEMT6000" gate="A" x="1.27" y="240.03" smashed="yes">
+<attribute name="NAME" x="-5.08" y="245.745" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-5.08" y="232.41" size="1.778" layer="96"/>
+</instance>
+<instance part="JP1" gate="A" x="-63.5" y="252.73" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-57.15" y="273.685" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="-57.15" y="229.87" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="JP2" gate="A" x="-63.5" y="203.2" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-57.15" y="224.155" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="-57.15" y="180.34" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="NEO" gate="A" x="1.27" y="168.91" smashed="yes">
+<attribute name="NAME" x="-5.08" y="174.625" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-5.08" y="161.29" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8731,6 +8755,33 @@ G - 		D8 - TEMT PWR
 <wire x1="-31.75" y1="203.2" x2="-43.18" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="-31.75" y1="203.2" x2="-31.75" y2="222.25" width="0.1524" layer="91"/>
 <wire x1="-31.75" y1="222.25" x2="-20.32" y2="222.25" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="NEOSIG" class="0">
+<segment>
+<pinref part="NEO" gate="A" pin="1"/>
+<wire x1="-1.27" y1="171.45" x2="-36.83" y2="171.45" width="0.1524" layer="91"/>
+<wire x1="-36.83" y1="171.45" x2="-36.83" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="-36.83" y1="218.44" x2="-43.18" y2="218.44" width="0.1524" layer="91"/>
+<label x="-15.24" y="171.45" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="NEOGND" class="0">
+<segment>
+<pinref part="NEO" gate="A" pin="2"/>
+<wire x1="-1.27" y1="168.91" x2="-31.75" y2="168.91" width="0.1524" layer="91"/>
+<wire x1="-31.75" y1="168.91" x2="-31.75" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="-31.75" y1="187.96" x2="-35.56" y2="187.96" width="0.1524" layer="91"/>
+<label x="-20.32" y="168.91" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="NEOPWR" class="0">
+<segment>
+<pinref part="NEO" gate="A" pin="3"/>
+<wire x1="-1.27" y1="166.37" x2="-39.37" y2="166.37" width="0.1524" layer="91"/>
+<wire x1="-39.37" y1="166.37" x2="-39.37" y2="234.95" width="0.1524" layer="91"/>
+<wire x1="-39.37" y1="234.95" x2="-41.91" y2="234.95" width="0.1524" layer="91"/>
+<label x="-24.13" y="166.37" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

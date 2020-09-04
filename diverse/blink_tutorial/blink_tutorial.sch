@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -18914,7 +18914,7 @@ Source: www.kingbright.com</description>
 <part name="T2" library="transistor" library_urn="urn:adsk.eagle:library:402" deviceset="BC547" device="" package3d_urn="urn:adsk.eagle:package:28523/2"/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U$1" library="SWI_COMMONS" deviceset="BRAND_SWI" device="5X7"/>
+<part name="U$1" library="SWI_COMMONS" deviceset="BRAND_SWI" device="5X7" value="SIG1"/>
 </parts>
 <sheets>
 <sheet>
@@ -19078,6 +19078,13 @@ Source: www.kingbright.com</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,119.911,76.731,FRAME1,,,,,"/>
+<approved hash="113,1,34.6117,96.52,LED1,,,,,"/>
+<approved hash="113,1,94.3017,96.52,LED2,,,,,"/>
+<approved hash="113,1,127.237,96.7156,JP1,,,,,"/>
+<approved hash="113,1,158.579,16.9735,U$1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
